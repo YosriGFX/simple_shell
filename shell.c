@@ -1,6 +1,8 @@
 #include "shell.h"
 /**
  * main - Shell in c.
+ * @argc: int
+ * @argv: double pointer
  * Return: EXIT_SUCCESS
 */
 int main(int argc, char **argv)
