@@ -11,7 +11,7 @@
 #include <signal.h>
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 64
-#define LINE_DELIM " \0\n\t"
+#define LINE_DELIM " \t\r\n\f\v"
 extern char  **environ;
 /**
 * struct builtin - builtin

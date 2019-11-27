@@ -12,8 +12,7 @@ int status;
 pid = fork();
 if (pid == 0)
 {
-int a = execve(args[0], args, environ);
-if (a == -1)
+if (execve(args[0], args, environ) == -1)
 {
 perror(nom);
 exit(0);
