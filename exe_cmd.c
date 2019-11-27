@@ -16,11 +16,9 @@ int a = execve(args[0], args, environ);
 if (a == -1)
 {
 perror(nom);
+exit(0);
 }
-exit(EXIT_FAILURE);
 }
-else if (pid < 0)
-perror(nom);
 else
 {
 do {
