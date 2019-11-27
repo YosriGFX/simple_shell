@@ -18,7 +18,6 @@ exit(EXIT_FAILURE);
 }
 while (1)
 {
-signal(SIGINT, sigintHandler);
 c = getchar();
 if (c == EOF)
 {
