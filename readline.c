@@ -11,6 +11,7 @@ int bufsize = BUFSIZE;
 int idx = 0;
 char *buff = malloc(sizeof(char) * bufsize);
 int c;
+_puts("#cisfun$ ");
 if (!buff)
 {
 perror(nom);
