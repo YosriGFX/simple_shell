@@ -3,17 +3,15 @@
  * main - Shell in c.
  * Return: EXIT_SUCCESS
 */
-int main(void)
+int main(int argc, char **argv)
 {
 char *cmdline;
-char **args;
-int exit;
 do {
 cmdline = readline();
-args = splitline(cmdline, LINE_DELIM);
-exit = execute(args);
+argv = splitline(cmdline, LINE_DELIM);
+argc = execute(argv);
 free(cmdline);
-free(args);
-} while (exit);
+free(argv);
+} while (argc);
 return (EXIT_SUCCESS);
 }
